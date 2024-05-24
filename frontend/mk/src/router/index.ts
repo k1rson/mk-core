@@ -9,10 +9,30 @@ const router = createRouter({
       path: '/',
       name: 'home',
       component: HomeView, 
-      meta: {
-
-      },
     },
+
+    // auth-system routes
+    {
+      path: '/auth',
+      name: 'auth',
+      children: [
+        {
+          path: 'sign-in/',
+          component: () => import('../views/AuthViews/LoginView.vue'),
+        },
+        {
+          path: 'sign-up/',
+          component: () => import('../views/AuthViews/RegisterView.vue'),
+        }
+      ]
+    }, 
+
+    // unknown routes
+    {
+      path: '/:pathMatch(.*)*',
+      name: 'notFoundRoute',
+      component: () => import('../views/ErrorViews/NotFoundView.vue'),
+    }
   ]
 })
 
