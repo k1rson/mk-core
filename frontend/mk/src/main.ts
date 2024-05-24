@@ -1,14 +1,17 @@
-import './assets/style.css'
+// style imports
+import './assets/style.css';
 
-import { createApp } from 'vue'
-import { createPinia } from 'pinia'
+// plugins
+import { registerPlugins } from './plugins';
 
-import App from './App.vue'
-import router from './router'
+// components
+import App from '../src/App.vue';
 
-const app = createApp(App)
+// composables
+import { createApp } from 'vue';
 
-app.use(createPinia())
-app.use(router)
+const app = createApp(App);
 
-app.mount('#app')
+registerPlugins(app);
+
+app.mount('#app');
