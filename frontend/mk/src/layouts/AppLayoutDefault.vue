@@ -1,4 +1,5 @@
+<script setup></script>
+
 <template>
-  <div class="">
-  </div>
+  <div class="flex">default layout</div>
 </template>

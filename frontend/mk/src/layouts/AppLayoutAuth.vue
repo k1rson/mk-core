@@ -1,5 +1,5 @@
 <script setup></script>
 
 <template>
-  <div class="flex">admin layout</div>
+  <div class="flex">auth layout</div>
 </template>
