@@ -1,5 +1,5 @@
 // style imports
-import './assets/style.css';
+import './assets/scss/main.scss';
 
 // plugins
 import { registerPlugins } from './plugins';

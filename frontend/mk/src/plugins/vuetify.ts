@@ -13,5 +13,5 @@ export default createVuetify({
     directives,
     theme: {
         defaultTheme: 'dark',
-    }
+    },
 })
