@@ -27,6 +27,18 @@ const router = createRouter({
       ]
     }, 
 
+    // admin-system routes
+    {
+      path: '/admin-panel',
+      name: 'adminPanel',
+      children: [
+        {
+          path: 'dashboard/',
+          component: () => import('../views/AdminViews/AdminDashboard.vue'),
+        },
+      ]
+    }, 
+
     // unknown routes
     {
       path: '/:pathMatch(.*)*',
