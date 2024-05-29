@@ -56,6 +56,14 @@ const router = createRouter({
             layout: AppLayoutsEnum.admin
           }
         },
+        {
+          path: 'email/',
+          component: () => import('../views/AdminViews/AdminEmail.vue'),
+          name: RouteNamesEnum.adminEmail,
+          meta: {
+            layout: AppLayoutsEnum.admin
+          }
+        },
       ]
     }, 
 

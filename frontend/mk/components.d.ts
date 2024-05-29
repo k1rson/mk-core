@@ -7,7 +7,17 @@ export {}
 /* prettier-ignore */
 declare module 'vue' {
   export interface GlobalComponents {
+    BasePopover: typeof import('./src/components/Base/BasePopover.vue')['default']
+    BasePopup: typeof import('./src/components/BaseComponents/BasePopup.vue')['default']
+    Notifications: typeof import('./src/components/Blocks/Notifications.vue')['default']
+    Popup: typeof import('./src/components/BaseComponents/Popup.vue')['default']
     RouterLink: typeof import('vue-router')['RouterLink']
     RouterView: typeof import('vue-router')['RouterView']
+    VCircleBtn: typeof import('./src/components/Base/VCircleBtn.vue')['default']
+    VCircleButton: typeof import('./src/components/Base/VCircleButton.vue')['default']
+    VNotificationItem: typeof import('./src/components/Blocks/Notification/VNotificationItem.vue')['default']
+    VNotifications: typeof import('./src/components/Blocks/Notification/VNotifications.vue')['default']
+    VServices: typeof import('./src/components/VServices.vue')['default']
+    VTextField: typeof import('./src/components/VTextField.vue')['default']
   }
 }

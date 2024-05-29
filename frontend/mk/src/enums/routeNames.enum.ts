@@ -7,6 +7,7 @@ export enum RouteNamesEnum {
     
     admin = 'admin',
     adminDashboard = 'admin-dashboard', 
+    adminEmail = 'admin-email', 
 
     notFoundRoute = 'not-found-route'
 }
