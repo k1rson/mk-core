@@ -15,7 +15,6 @@ const services = ref([
     pathName: 'admin-dashboard',
     nextDivider: true
   },
-  { title: 'Chat', icon: 'mdi-chat-outline', pathName: '' },
   { title: 'Email', icon: 'mdi-email-outline', pathName: 'admin-email' },
   { title: 'Technical Support', icon: 'mdi-face-agent', pathName: '', nextDivider: true },
   { title: 'Book Storage', icon: 'mdi-book-open-blank-variant-outline', pathName: '' },
@@ -38,11 +37,9 @@ const services = ref([
           style="background-color: rgb(52, 61, 92) !important; border-bottom-left-radius: 25px"
         >
           <router-link :to="{ name: 'home' }">
-            <v-img
-              src="../src/assets/images/svg/logo-evo-none-text.svg"
-              width="45"
-              class="hover:animate-pulse mb-2 mt-1"
-            />
+            <v-img width="45" class="hover:animate-pulse mb-2 mt-1">
+              <img src="@/assets/img/svg/logo-evo-none-text.svg" alt="" />
+            </v-img>
           </router-link>
 
           <v-icon
@@ -127,7 +124,7 @@ const services = ref([
     </v-app-bar>
 
     <!-- main content <SLOT in MAIN> -->
-    <v-main class="m-4">
+    <v-main class="flex justify-center m-4">
       <slot></slot>
     </v-main>
 

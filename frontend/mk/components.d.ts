@@ -9,6 +9,9 @@ declare module 'vue' {
   export interface GlobalComponents {
     BasePopover: typeof import('./src/components/Base/BasePopover.vue')['default']
     BasePopup: typeof import('./src/components/BaseComponents/BasePopup.vue')['default']
+    IEmployee: typeof import('./src/components/Icon/IEmployee.vue')['default']
+    ISupport: typeof import('./src/components/Icon/ISupport.vue')['default']
+    ITehcnicalSupport: typeof import('./src/components/Icon/ITehcnicalSupport.vue')['default']
     Notifications: typeof import('./src/components/Blocks/Notifications.vue')['default']
     Popup: typeof import('./src/components/BaseComponents/Popup.vue')['default']
     RouterLink: typeof import('vue-router')['RouterLink']
